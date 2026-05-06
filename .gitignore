@@ -1,0 +1,39 @@
+# Generated output
+runs/
+analysis/
+drug_screening_results/
+docking_out/
+*.log
+batch_summary.csv
+
+# Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+cid_cache.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+*.key
+
+# Licensed/large data — users must obtain themselves
+shared/*
+!shared/README.md
+
+# Molecular structure files (user-provided)
+*.pdb
+*.pdbqt
+*.sdf
+
+# Output spreadsheets and intermediate result files
+*.xlsx
+downloaded1_example.csv
+my_blast_result.xml

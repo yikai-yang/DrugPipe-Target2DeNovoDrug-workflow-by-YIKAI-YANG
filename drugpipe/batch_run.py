@@ -27,8 +27,8 @@ import pandas as pd
 # ==============================================================
 # CONFIGURATION
 # ==============================================================
-BASE_DIR    = Path("/Users/yikai/Desktop/Whole_DrugPipe")
-SCRIPTS_DIR = BASE_DIR / "scripts"
+BASE_DIR    = Path(os.environ.get("DRUGPIPE_BASE_DIR", Path(__file__).resolve().parent.parent))
+SCRIPTS_DIR = Path(__file__).resolve().parent
 RUNS_DIR    = BASE_DIR / "runs"
 
 # Targets to process. IGFBP7 omitted — already completed.

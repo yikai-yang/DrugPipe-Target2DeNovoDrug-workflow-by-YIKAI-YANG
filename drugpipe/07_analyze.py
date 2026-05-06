@@ -29,7 +29,7 @@ RDLogger.DisableLog("rdApp.*")
 # ==============================================================
 # CONFIG
 # ==============================================================
-BASE_DIR   = Path("/Users/yikai/Desktop/Whole_DrugPipe")
+BASE_DIR   = Path(os.environ.get("DRUGPIPE_BASE_DIR", Path(__file__).resolve().parent.parent))
 RUNS_DIR   = BASE_DIR / "runs"
 ANALYSIS_DIR = BASE_DIR / "analysis"
 ANALYSIS_DIR.mkdir(exist_ok=True)
